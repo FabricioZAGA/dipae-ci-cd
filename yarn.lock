@@ -1084,6 +1084,24 @@
     "@types/istanbul-lib-coverage" "*"
     "@types/istanbul-lib-report" "*"
 
+"@types/node@*":
+  version "14.0.23"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.0.23.tgz#676fa0883450ed9da0bb24156213636290892806"
+  integrity sha512-Z4U8yDAl5TFkmYsZdFPdjeMa57NOvnaf1tljHzhouaPEp7LCj2JKkejpI1ODviIAQuW4CcQmxkQ77rnLsOOoKw==
+
+"@types/node@^13.13.4":
+  version "13.13.14"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-13.13.14.tgz#20cd7d2a98f0c3b08d379f4ea9e6b315d2019529"
+  integrity sha512-Az3QsOt1U/K1pbCQ0TXGELTuTkPLOiFIQf3ILzbOyo0FqgV9SxRnxbxM5QlAveERZMHpZY+7u3Jz2tKyl+yg6g==
+
+"@types/source-map-support@^0.5.1":
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/@types/source-map-support/-/source-map-support-0.5.2.tgz#35e7446d470e63ec3fff4d7eceee0bc40efad239"
+  integrity sha512-krvWmwQ2Pzr+Yp8tKjhKC9UguRNg1ev9mNdlVVpVJvU9iynulYZsx3ydf1SPzNNxzhmbWAOAIw5hMWhAMDc2NA==
+  dependencies:
+    "@types/node" "*"
+    source-map "^0.6.0"
+
 "@types/stack-utils@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@types/stack-utils/-/stack-utils-1.0.1.tgz#0a851d3bd96498fa25c33ab7278ed3bd65f06c3e"
@@ -1340,6 +1358,21 @@ aws-sdk@^2.615.0:
     uuid "3.3.2"
     xml2js "0.4.19"
 
+aws-sdk@^2.668.0:
+  version "2.715.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.715.0.tgz#b890892098e0a4d9e7189ed341267d4a9a6e856b"
+  integrity sha512-O6ytb66IXFCowp0Ng2bSPM6v/cZVOhjJWFTR1CG4ieG4IroAaVgB3YQKkfPKA0Cy9B/Ovlsm7B737iuroKsd0w==
+  dependencies:
+    buffer "4.9.2"
+    events "1.1.1"
+    ieee754 "1.1.13"
+    jmespath "0.15.0"
+    querystring "0.2.0"
+    sax "1.2.1"
+    url "0.10.3"
+    uuid "3.3.2"
+    xml2js "0.4.19"
+
 aws-serverless-express@^3.3.6:
   version "3.3.6"
   resolved "https://registry.yarnpkg.com/aws-serverless-express/-/aws-serverless-express-3.3.6.tgz#5fb35c23af3d6e18a6bebdb4397d20dfdcc0a828"
@@ -1513,6 +1546,15 @@ buffer@4.9.1:
   version "4.9.1"
   resolved "https://registry.yarnpkg.com/buffer/-/buffer-4.9.1.tgz#6d1bb601b07a4efced97094132093027c95bc298"
   integrity sha1-bRu2AbB6TvztlwlBMgkwJ8lbwpg=
+  dependencies:
+    base64-js "^1.0.2"
+    ieee754 "^1.1.4"
+    isarray "^1.0.0"
+
+buffer@4.9.2:
+  version "4.9.2"
+  resolved "https://registry.yarnpkg.com/buffer/-/buffer-4.9.2.tgz#230ead344002988644841ab0244af8c44bbe3ef8"
+  integrity sha512-xq+q3SRMOxGivLhBNaUdC64hDTQwejJ+H0T/NB1XMtTVEwNTrfFF3gAxiyW0Bu/xWEGhjVKgUcMhCrUy2+uCWg==
   dependencies:
     base64-js "^1.0.2"
     ieee754 "^1.1.4"
@@ -2089,6 +2131,17 @@ duplexer3@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/duplexer3/-/duplexer3-0.1.4.tgz#ee01dd1cac0ed3cbc7fdbea37dc0a8f1ce002ce2"
   integrity sha1-7gHdHKwO08vH/b6jfcCo8c4ALOI=
+
+dynamoose@^2.2.0:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/dynamoose/-/dynamoose-2.2.1.tgz#c1cbca66c51c78c26b71621e8840bbd11f3cd787"
+  integrity sha512-VICnSuDnHNYEbrol0H+Lbg5/FlhImowrvOh6Rf8GmCmW894rzeqlUnlN0G/trY06s4vD93VsIuxjk8xrG665KA==
+  dependencies:
+    "@types/node" "^13.13.4"
+    "@types/source-map-support" "^0.5.1"
+    aws-sdk "^2.668.0"
+    source-map-support "^0.5.19"
+    uuid "^8.0.0"
 
 ee-first@1.1.1:
   version "1.1.1"
@@ -3653,9 +3706,9 @@ lodash.get@^4.4.2:
   integrity sha1-LRd/ZS+jHpObRDjVNBSZ36OCXpk=
 
 lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@~4.17.15:
-  version "4.17.15"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
-  integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+  version "4.17.19"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
+  integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
 
 log-symbols@2.2.0:
   version "2.2.0"
@@ -5029,6 +5082,14 @@ source-map-support@^0.5.16:
     buffer-from "^1.0.0"
     source-map "^0.6.0"
 
+source-map-support@^0.5.19:
+  version "0.5.19"
+  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.19.tgz#a98b62f86dcaf4f67399648c085291ab9e8fed61"
+  integrity sha512-Wonm7zOCIJzBGQdB+thsPar0kYuCIzYvxZwlBa87yi/Mdjv7Tip2cyVbLj5o0cFPN4EVkuTwb3GDDyUx2DGnGw==
+  dependencies:
+    buffer-from "^1.0.0"
+    source-map "^0.6.0"
+
 source-map-url@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/source-map-url/-/source-map-url-0.4.0.tgz#3e935d7ddd73631b97659956d55128e87b5084a3"
@@ -5570,6 +5631,11 @@ uuid@^3.3.3:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
+
+uuid@^8.0.0:
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.2.0.tgz#cb10dd6b118e2dada7d0cd9730ba7417c93d920e"
+  integrity sha512-CYpGiFTUrmI6OBMkAdjSDM0k5h8SkkiTP4WAjQgDgNB1S3Ou9VBEvr6q0Kv2H1mMk7IWfxYGpMH5sd5AvcIV2Q==
 
 v8-compile-cache@^2.0.3:
   version "2.1.0"
